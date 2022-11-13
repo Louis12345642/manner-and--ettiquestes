@@ -32,7 +32,7 @@ function submitData(){
         </h2>
         <div class="flex gap-6 justify-center">
           <p class="mt-10 align-bottom font-sans font-semibold text-gray-500">
-            By Manner and Ettequetes
+       contact us here below
           </p>
           <img
             class="mt-7 w-12 h-12 rounded-full round-border"
@@ -44,16 +44,13 @@ function submitData(){
     </section>
   <!-- contact us  -->
   <main class="flex  justify-center mt-20 gap-10">
-
-
     <section>
-
         <div v-if="$page.props.flash.message" class="text-white px-6 py-4 border-0 rounded relative mb-4 bg-emerald-500">
   <span class="text-xl inline-block mr-5 align-middle">
     <i class="fa fa-bell"></i>
   </span>
   <span class="inline-block align-middle mr-8">
-    <b class="capitalize">thank you</b>    {{$page.props.flash.message}}
+    <b class="capitalize">thank you</b>{{$page.props.flash.message}}
   </span>
   <button class="absolute bg-transparent text-2xl font-semibold leading-none right-0 top-0 mt-4 mr-6 outline-none focus:outline-none" onclick="closeAlert(event)">
     <span>×</span>

@@ -18,9 +18,8 @@ class PostController extends Controller
     {
         $featuredPosts = Post::with(['category','author'])->latest()->take(8)->get();
         // $dogs = Dogs::orderBy('id', 'desc')->take(5)->get();
-        $posts= Post::with(['category','author'])->filter(request(['search']))->get();
+        $posts= Post::with(['category','author'])->filter(request(['search']))->take(6)->get();
         // dd($posts);
-
 
         // return inertia('Posts/home',compact('posts'));
         return Inertia::render('home',[
